@@ -1,12 +1,139 @@
-@font-face {
-  font-family: OpenSans;
-  src: url(fonts/629a55a7e793da068dc580d184cc0e31.ttf);
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  min-height: 100vh;
-  background: #5e003a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#section-one {
+  background-image: url("images/leaf-hand.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 100px;
+}
+
+#section-one h1 {
+  font-size: 50px;
+  color: darkolivegreen;
+  line-height: 1.2;
+}
+
+#section-one p {
+  font-size: 20px;
+}
+
+#section-one .button {
+  font-size: 18px;
+  text-decoration: none;
+  background-color: yellowgreen;
   color: white;
-  background-image: url(images/e1d5874c81ec7d690e1de0cadb0d3b8b.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  border: darkolivegreen 1px solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+#section-one .button:hover {
+  background-color: darkolivegreen;
+}
+
+#section-two {
+  padding: 100px;
+  color: darkgreen;
+}
+
+#section-three {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-four-list {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+​ .section-four-list > ul {
+  list-style-type: none;
+}
+
+@media (max-width: 1257px) {
+  #section-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.section-four {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="reset"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

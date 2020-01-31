@@ -1,15 +1,110 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Go Green | Sustainable Living</title>
 
-<head>
-    <meta charset="utf-8">
-    <title>Webpack Boilerplate</title>
-    
-    <link rel="stylesheet" href="dist/bundle.css">
+    <!-- WEBPACK -->
+    <link rel="stylesheet" href="dist/bundle.css" />
+
+    <!-- WEBPACK -->
+  </head>
+  <body>
+    <div id="page-date"></div>
+
+    <section id="section-one">
+      <h1>Go Green</h1>
+      <h3>Sustainablity is a Lifestyle</h3>
+      <a href="#" class="button">Start Now</a>
+    </section>
+
+    <section id="section-two">
+      <h3>Sustainable Lifestyle</h3>
+      <p>
+        Sustainable living describes a lifestyle that attempts to reduce an
+        individual's or society's use of the Earth's natural resources, and
+        one's personal resources It is often called as "earth harmony living" or
+        "net zero living". Its practitioners often attempt to reduce their
+        ecological footprint (including their carbon footprint) by altering
+        their methods of transportation, energy consumption, and diet. Its
+        proponents aim to conduct their lives in ways that are consistent with
+        sustainability, naturally balanced, and respectful of humanity's
+        symbiotic relationship with the Earth's natural ecology. The practice
+        and general philosophy of ecological living closely follows the overall
+        principles of sustainable development.
+      </p>
+    </section>
+
+    <div id="section-three">
+      <div id="solar">
+        <img
+          src="./src/images/solar.jpg"
+          alt="solar"
+          style="height: 300px; width:400px"
+        />
+      </div>
+
+      <div id="wind">
+        <img
+          src="./src/images/wind.jpg"
+          alt="wind"
+          style="height: 300px; width:400px"
+        />
+      </div>
+
+      <div id="plants">
+        <img
+          src="./src/images/plants.jpg"
+          alt="plants"
+          style="height: 300px; width:400px"
+        />
+      </div>
+    </div>
+
+    <h3>Ways to go Green Now!</h3>
+
+    <div class="section-four">
+      <div class="section-four-list">
+        <ul>
+          <li>Recycle</li>
+          <li>Walk or Bike More</li>
+          <li>Air Dry Clothes</li>
+          <li>Plant a Tree</li>
+          <li>Pay Bills Online</li>
+        </ul>
+      </div>
+
+      <div class="section-four-list">
+        <ul>
+          <li>LED Light Bulbs</li>
+          <li>Reuseable Water Bottle</li>
+          <li>Properly Dispose of Batteries</li>
+          <li>Cut Shower Time in Half</li>
+          <li>Use Public Transportation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="form">
+      <form action="/client" onsubmit="myFunction(event,this)" method="POST">
+        <h3>Newsletter Signup!</h3>
+        <input
+          type="text"
+          name="lastName"
+          id="last-name"
+          placeholder="Last Name"
+        />
+        <br />
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <br />
+
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Go Green!" />
+      </form>
+      ​
+    </div>
     <script src="dist/bundle.js"></script>
-</head>
-
-<body>
-</body>
-
+  </body>
 </html>
